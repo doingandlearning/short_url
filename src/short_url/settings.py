@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+
+    #custom
+    'shortener',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +54,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'short_url.urls'
+
 
 TEMPLATES = [
     {
@@ -118,3 +123,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+SHORTCODE_MAX = 15
+SHORTCODE_MIN = 6
